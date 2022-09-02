@@ -1,0 +1,103 @@
+
+@import '../theme/index.scss';
+
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+
+@mixin break-all {
+  white-space: normal;
+  word-break: break-all;
+}
+
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin TypographyTitle {
+  font-weight: $font-bold;
+  font-family: $font-family;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+@mixin TypographyTitleH1() {
+  color: $heading-color;
+  font-size: 40px;
+  line-height: 1.4;
+  @include TypographyTitle;
+}
+
+@mixin TypographyTitleH2() {
+  color: $heading-color;
+  font-size: 32px;
+  line-height: 1.38;
+  @include TypographyTitle;
+}
+
+@mixin TypographyTitleH3() {
+  color: $heading-color;
+  font-size: 24px;
+  line-height: 1.33;
+  @include TypographyTitle;
+}
+
+@mixin TypographyTitleH4() {
+  color: $heading-color;
+  font-size: 20px;
+  line-height: 1.4;
+  @include TypographyTitle;
+}
+
+@mixin TypographyTitleH5() {
+  color: $heading-color;
+  font-size: 14px;
+  line-height: 1.43;
+  @include TypographyTitle;
+}
+
+@mixin TypographyTitleH6() {
+  color: $heading-color;
+  font-size: $size-small;
+  line-height: 1.67;
+  @include TypographyTitle;
+}
+
+@mixin TypographySymbolText($color: $text-color) {
+  color: $color;
+  font-weight: $font-bold;
+  font-size: $size-small;
+  font-family: $font-family;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+}
+
+@mixin TypographyParagraphCode($color: $paragraph-color) {
+  color: $color;
+  font-weight: normal;
+  font-size: $size-small;
+  font-family: $font-family;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+
+@mixin TypographyParagraph($color: $paragraph-color) {
+  color: $color;
+  font-weight: normal;
+  font-size: $size-small;
+  font-family: $font-family;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+}
