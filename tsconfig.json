@@ -1,15 +1,34 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "declaration": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
+    "outDir": "./lib",
+    "moduleResolution": "node",
     "jsx": "react",
     "baseUrl": "./",
+    "allowJs": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "lib": ["ES2016", "DOM"],
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "@kube-design/components": ["src"],
       "@kube-design/components/*": ["src/*", "*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib", "es", "dist", ".dumi"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "resolveJsonModule": true,
+      "noImplicitAny": false
     }
   }
 }

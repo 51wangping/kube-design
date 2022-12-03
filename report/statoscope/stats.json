@@ -1,0 +1,1125 @@
+{
+  "hash": "721520ce03b454db8759",
+  "version": "5.75.0",
+  "time": 627,
+  "builtAt": 1670048609811,
+  "publicPath": "auto",
+  "outputPath": ".",
+  "assetsByChunkName": { "main": ["@kube-design/components.js"] },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "@kube-design/components.js",
+      "size": 998,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": { "javascriptModule": false, "minimized": true, "size": 998 },
+      "chunkNames": ["main"],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [179],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 1167,
+      "sizes": { "javascript": 230, "runtime": 937 },
+      "names": ["main"],
+      "idHints": [],
+      "runtime": ["main"],
+      "files": ["@kube-design/components.js"],
+      "auxiliaryFiles": [],
+      "hash": "7815f72f58e83d357ee8",
+      "childrenByOrder": {},
+      "id": 179,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/esm",
+          "layer": null,
+          "size": 188,
+          "sizes": { "javascript": 188 },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js|fd7b899910db4dfabca360d85e97a1ab",
+          "name": "./lib/es/index.js + 1 modules",
+          "nameForCondition": "./lib/es/index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 241,
+          "chunks": [179],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./lib/es/index.js",
+              "loc": "main",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": null,
+              "active": true,
+              "explanation": "used as library export",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": true,
+          "providedExports": ["Foo"],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Cannot concat with external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"react\",\"root\":\"React\"}: umd externals can't be concatenated"
+          ],
+          "depth": 0,
+          "modules": [
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "layer": null,
+              "size": 39,
+              "sizes": { "javascript": 39 },
+              "built": true,
+              "codeGenerated": false,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+              "name": "./lib/es/index.js",
+              "nameForCondition": "./lib/es/index.js",
+              "index": 0,
+              "preOrderIndex": 0,
+              "index2": 2,
+              "postOrderIndex": 2,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": true,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": null,
+              "issuerId": null,
+              "chunks": [],
+              "assets": [],
+              "reasons": [],
+              "usedExports": true,
+              "providedExports": ["Foo"],
+              "optimizationBailout": [
+                "Dependency (harmony side effect evaluation) with side effects at 1:0-39"
+              ],
+              "depth": 0
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "layer": null,
+              "size": 149,
+              "sizes": { "javascript": 149 },
+              "built": true,
+              "codeGenerated": false,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+              "name": "./lib/es/Foo/index.js",
+              "nameForCondition": "./lib/es/Foo/index.js",
+              "index": 1,
+              "preOrderIndex": 1,
+              "index2": 1,
+              "postOrderIndex": 1,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": true,
+              "issuer": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+              "issuerName": "./lib/es/index.js",
+              "issuerPath": [
+                {
+                  "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+                  "name": "./lib/es/index.js",
+                  "id": null
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": null,
+              "issuerId": null,
+              "chunks": [],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+                  "module": "./lib/es/index.js",
+                  "moduleName": "./lib/es/index.js",
+                  "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+                  "resolvedModule": "./lib/es/index.js",
+                  "type": "harmony side effect evaluation",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./Foo",
+                  "loc": "1:0-39",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+                  "module": "./lib/es/index.js",
+                  "moduleName": "./lib/es/index.js",
+                  "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+                  "resolvedModule": "./lib/es/index.js",
+                  "type": "harmony export imported specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./Foo",
+                  "loc": "1:0-39",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": ["default"],
+              "providedExports": ["default"],
+              "optimizationBailout": [
+                "Dependency (harmony side effect evaluation) with side effects at 1:0-26"
+              ],
+              "depth": 1
+            }
+          ]
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": { "javascript": 42 },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external umd {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"react\",\"root\":\"React\"}",
+          "name": "external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"react\",\"root\":\"React\"}",
+          "nameForCondition": null,
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+          "issuerName": "./lib/es/Foo/index.js",
+          "issuerPath": [
+            {
+              "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+              "name": "./lib/es/index.js",
+              "id": null
+            },
+            {
+              "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+              "name": "./lib/es/Foo/index.js",
+              "id": null
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 359,
+          "issuerId": null,
+          "chunks": [179],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+              "module": "./lib/es/Foo/index.js",
+              "moduleName": "./lib/es/Foo/index.js",
+              "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+              "resolvedModule": "./lib/es/Foo/index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "react",
+              "loc": "1:0-26",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+              "module": "./lib/es/Foo/index.js",
+              "moduleName": "./lib/es/Foo/index.js",
+              "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+              "resolvedModule": "./lib/es/Foo/index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "react",
+              "loc": "3:22-41",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js|fd7b899910db4dfabca360d85e97a1ab",
+              "module": "./lib/es/index.js + 1 modules",
+              "moduleName": "./lib/es/index.js + 1 modules",
+              "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+              "resolvedModule": "./lib/es/Foo/index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "react",
+              "loc": "1:0-26",
+              "moduleId": 241,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js|fd7b899910db4dfabca360d85e97a1ab",
+              "module": "./lib/es/index.js + 1 modules",
+              "moduleName": "./lib/es/index.js + 1 modules",
+              "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+              "resolvedModule": "./lib/es/Foo/index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "react",
+              "loc": "3:22-41",
+              "moduleId": 241,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: umd externals can't be concatenated"
+          ],
+          "depth": 2
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 267,
+          "sizes": { "runtime": 267 },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/compat get default export",
+          "name": "webpack/runtime/compat get default export",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [179],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": { "runtime": 308 },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [179],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": { "runtime": 88 },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [179],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": { "runtime": 274 },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [179],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./lib/es/index.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/esm",
+      "layer": null,
+      "size": 188,
+      "sizes": { "javascript": 188 },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js|fd7b899910db4dfabca360d85e97a1ab",
+      "name": "./lib/es/index.js + 1 modules",
+      "nameForCondition": "./lib/es/index.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 241,
+      "chunks": [179],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./lib/es/index.js",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": null,
+          "active": true,
+          "explanation": "used as library export",
+          "userRequest": null,
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": true,
+      "providedExports": ["Foo"],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Cannot concat with external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"react\",\"root\":\"React\"}: umd externals can't be concatenated"
+      ],
+      "depth": 0,
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 39,
+          "sizes": { "javascript": 39 },
+          "built": true,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+          "name": "./lib/es/index.js",
+          "nameForCondition": "./lib/es/index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": null,
+          "chunks": [],
+          "assets": [],
+          "reasons": [],
+          "usedExports": true,
+          "providedExports": ["Foo"],
+          "optimizationBailout": [
+            "Dependency (harmony side effect evaluation) with side effects at 1:0-39"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 149,
+          "sizes": { "javascript": 149 },
+          "built": true,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+          "name": "./lib/es/Foo/index.js",
+          "nameForCondition": "./lib/es/Foo/index.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+          "issuerName": "./lib/es/index.js",
+          "issuerPath": [
+            {
+              "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+              "name": "./lib/es/index.js",
+              "id": null
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": null,
+          "chunks": [],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+              "module": "./lib/es/index.js",
+              "moduleName": "./lib/es/index.js",
+              "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+              "resolvedModule": "./lib/es/index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./Foo",
+              "loc": "1:0-39",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+              "module": "./lib/es/index.js",
+              "moduleName": "./lib/es/index.js",
+              "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+              "resolvedModule": "./lib/es/index.js",
+              "type": "harmony export imported specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./Foo",
+              "loc": "1:0-39",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": ["default"],
+          "providedExports": ["default"],
+          "optimizationBailout": [
+            "Dependency (harmony side effect evaluation) with side effects at 1:0-26"
+          ],
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 149,
+      "sizes": { "javascript": 149 },
+      "built": true,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+      "name": "./lib/es/Foo/index.js",
+      "nameForCondition": "./lib/es/Foo/index.js",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+      "issuerName": "./lib/es/index.js",
+      "issuerPath": [
+        {
+          "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+          "name": "./lib/es/index.js",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+          "module": "./lib/es/index.js",
+          "moduleName": "./lib/es/index.js",
+          "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+          "resolvedModule": "./lib/es/index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./Foo",
+          "loc": "1:0-39",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+          "module": "./lib/es/index.js",
+          "moduleName": "./lib/es/index.js",
+          "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+          "resolvedModule": "./lib/es/index.js",
+          "type": "harmony export imported specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./Foo",
+          "loc": "1:0-39",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": ["default"],
+      "providedExports": ["default"],
+      "optimizationBailout": [
+        "Dependency (harmony side effect evaluation) with side effects at 1:0-26"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": { "javascript": 42 },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external umd {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"react\",\"root\":\"React\"}",
+      "name": "external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"react\",\"root\":\"React\"}",
+      "nameForCondition": null,
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "optional": false,
+      "orphan": false,
+      "issuer": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+      "issuerName": "./lib/es/Foo/index.js",
+      "issuerPath": [
+        {
+          "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js",
+          "name": "./lib/es/index.js",
+          "id": null
+        },
+        {
+          "identifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+          "name": "./lib/es/Foo/index.js",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 359,
+      "issuerId": null,
+      "chunks": [179],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+          "module": "./lib/es/Foo/index.js",
+          "moduleName": "./lib/es/Foo/index.js",
+          "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+          "resolvedModule": "./lib/es/Foo/index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "react",
+          "loc": "1:0-26",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+          "module": "./lib/es/Foo/index.js",
+          "moduleName": "./lib/es/Foo/index.js",
+          "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+          "resolvedModule": "./lib/es/Foo/index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "react",
+          "loc": "3:22-41",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js|fd7b899910db4dfabca360d85e97a1ab",
+          "module": "./lib/es/index.js + 1 modules",
+          "moduleName": "./lib/es/index.js + 1 modules",
+          "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+          "resolvedModule": "./lib/es/Foo/index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "react",
+          "loc": "1:0-26",
+          "moduleId": 241,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js|fd7b899910db4dfabca360d85e97a1ab",
+          "module": "./lib/es/index.js + 1 modules",
+          "moduleName": "./lib/es/index.js + 1 modules",
+          "resolvedModuleIdentifier": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/Foo/index.js",
+          "resolvedModule": "./lib/es/Foo/index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "react",
+          "loc": "3:22-41",
+          "moduleId": 241,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: umd externals can't be concatenated"
+      ],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 267,
+      "sizes": { "runtime": 267 },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/compat get default export",
+      "name": "webpack/runtime/compat get default export",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [179],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": { "runtime": 308 },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [179],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": { "runtime": 88 },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [179],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": { "runtime": 274 },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [179],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [179],
+      "assets": [{ "name": "@kube-design/components.js", "size": 998 }],
+      "filteredAssets": 0,
+      "assetsSize": 998,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [179],
+      "assets": [{ "name": "@kube-design/components.js", "size": 998 }],
+      "filteredAssets": 0,
+      "assetsSize": 998,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": [],
+  "__statoscope": {
+    "descriptor": { "name": "@statoscope/stats", "version": "5.14.1" },
+    "extensions": [
+      {
+        "descriptor": {
+          "name": "@statoscope/stats-extension-package-info",
+          "version": "5.24.0",
+          "author": {
+            "name": "Sergey Melyukov",
+            "url": "https://twitter.com/smelukov"
+          },
+          "homepage": "https://github.com/statoscope/statoscope/",
+          "description": "Statoscope extension for collecting package info (e.g. available versions)",
+          "adapter": {
+            "name": "@statoscope/webpack-stats-extension-package-info",
+            "version": "5.24.0",
+            "author": {
+              "name": "Sergey Melyukov",
+              "url": "https://twitter.com/smelukov"
+            },
+            "homepage": "https://github.com/statoscope/statoscope/",
+            "description": "Webpack adapter for @statoscope/stats-extension-package-info"
+          }
+        },
+        "payload": {
+          "compilations": [
+            {
+              "id": null,
+              "packages": [
+                {
+                  "name": "@kube-design/components",
+                  "instances": [
+                    { "path": "lib", "info": { "version": "0.0.1" } }
+                  ]
+                },
+                {
+                  "name": "babel-loader",
+                  "instances": [
+                    {
+                      "path": "node_modules/babel-loader",
+                      "info": { "version": "8.3.0" }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "descriptor": {
+          "name": "@statoscope/stats-extension-compressed",
+          "version": "5.24.0",
+          "author": {
+            "name": "Sergey Melyukov",
+            "url": "https://twitter.com/smelukov"
+          },
+          "homepage": "https://github.com/statoscope/statoscope/",
+          "description": "Statoscope extension for collecting compressed resource sizes",
+          "adapter": {
+            "name": "@statoscope/webpack-stats-extension-compressed",
+            "version": "5.24.0",
+            "author": {
+              "name": "Sergey Melyukov",
+              "url": "https://twitter.com/smelukov"
+            },
+            "homepage": "https://github.com/statoscope/statoscope/",
+            "description": "Webpack adapter for @statoscope/stats-extension-compressed"
+          }
+        },
+        "payload": {
+          "compilations": [
+            {
+              "id": "721520ce03b454db8759",
+              "resources": [
+                {
+                  "id": "@kube-design/components.js",
+                  "size": {
+                    "compressor": "gzip",
+                    "size": 521,
+                    "meta": { "level": 6 }
+                  }
+                },
+                {
+                  "id": "webpack/runtime/hasOwnProperty shorthand",
+                  "size": {
+                    "compressor": "gzip",
+                    "size": 97,
+                    "meta": { "level": 6 }
+                  }
+                },
+                {
+                  "id": "webpack/runtime/compat get default export",
+                  "size": {
+                    "compressor": "gzip",
+                    "size": 192,
+                    "meta": { "level": 6 }
+                  }
+                },
+                {
+                  "id": "webpack/runtime/define property getters",
+                  "size": {
+                    "compressor": "gzip",
+                    "size": 197,
+                    "meta": { "level": 6 }
+                  }
+                },
+                {
+                  "id": "webpack/runtime/make namespace object",
+                  "size": {
+                    "compressor": "gzip",
+                    "size": 186,
+                    "meta": { "level": 6 }
+                  }
+                },
+                {
+                  "id": "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!./lib/es/index.js|fd7b899910db4dfabca360d85e97a1ab",
+                  "size": {
+                    "compressor": "gzip",
+                    "size": 376,
+                    "meta": { "level": 6 }
+                  }
+                },
+                {
+                  "id": "external umd {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"react\",\"root\":\"React\"}",
+                  "size": {
+                    "compressor": "gzip",
+                    "size": 70,
+                    "meta": { "level": 6 }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "context": "/Users/bruce/Desktop/qing/kube-deign/dumi-kubeD"
+  }
+}
