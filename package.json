@@ -7,15 +7,11 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "dumi dev",
-    "build": "father build",
-    "build:watch": "father dev",
     "docs:build": "dumi build",
     "prepare": "husky install && dumi setup",
-    "doctor": "father doctor",
     "lint": "npm run lint:es && npm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
-    "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepublishOnly": "father doctor && npm run build"
+    "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\""
   },
   "authors": [],
   "license": "MIT",
@@ -57,7 +53,6 @@
     "@umijs/lint": "^4.0.0",
     "dumi": "^2.0.0-rc.0",
     "eslint": "^8.23.0",
-    "father": "^4.1.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
