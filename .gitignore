@@ -6,4 +6,7 @@ node_modules
 .DS_Store
 
 # build
-/lib
+lib
+
+#report
+/report
