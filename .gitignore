@@ -1,9 +1,11 @@
 node_modules
 /dist
 .dumi/tmp
+.dumi/theme
 .dumi/tmp-test
 .dumi/tmp-production
 .DS_Store
+src/.umi
 
 # build
 lib

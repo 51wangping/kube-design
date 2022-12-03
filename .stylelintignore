@@ -5,3 +5,4 @@ jest/
 node_modules/
 jest.config.js
 babel.config.js
+src/.umi
