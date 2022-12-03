@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "description": "",
   "license": "MIT",
-  "module": "dist/index.js",
-  "types": "dist/types.d.ts",
+  "main": "./cjs/index.js",
+  "unpkg": "./umd/@kube-design/components.js",
+  "module": "./es/index.js",
+  "types": "./es/index.d.ts",
+  "typings": "./es/index.d.ts",
   "files": [
-    "dist"
+    "./lib"
   ],
   "scripts": {
     "build": "gulp",
@@ -16,6 +19,9 @@
     "lint:css": "stylelint \"{src,test}/**/*.{css,scss}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
+    "pub": "npm publish ./lib",
+    "pub:alpha": "npm publish ./lib --tag alpha",
+    "pub:dev": "npm publish ./lib --tag dev",
     "start": "npm run dev"
   },
   "commitlint": {
@@ -85,5 +91,6 @@
   "publishConfig": {
     "access": "public"
   },
+  "GravityCDN": "./umd/@kube-design/components.js",
   "authors": []
 }
