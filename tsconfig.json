@@ -14,7 +14,8 @@
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "@kube-design/components": ["src"],
-      "@kube-design/components/*": ["src/*", "*"]
+      "@kube-design/components/*": ["src/*", "*"],
+      "demos": ["src/demos/index.ts"]
     },
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,

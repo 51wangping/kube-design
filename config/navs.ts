@@ -9,6 +9,6 @@ export const navs = [
   },
   {
     title: 'GitHub',
-    path: '',
+    path: 'https://github.com/51wangping/kube-design',
   },
 ];

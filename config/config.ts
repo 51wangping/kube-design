@@ -3,12 +3,12 @@ import { menus } from './menus';
 import { navs } from './navs';
 const repo = '@kube-design/components';
 
+const logo = 'https://kubesphere.cloud/images/index/logo-QC.svg';
 const config: IConfig = {
   mode: 'site',
   title: 'kube-design',
-  logo: 'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  favicon:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
+  logo: logo,
+  favicon: logo,
   navs,
   menus,
   resolve: {
@@ -22,10 +22,25 @@ const config: IConfig = {
     demos: process.cwd() + '/src/demos/index.ts',
   },
   metas: [],
+  locales: [
+    ['zh', '中文'],
+    ['en', 'English'],
+  ],
   hash: true,
   themeConfig: {},
   exportStatic: {},
   dynamicImport: {},
+  chainWebpack(memo, { createCSSRule }) {
+    createCSSRule({
+      lang: 'sass',
+      test: new RegExp(/\.(scss|sass)$/),
+      type: 'csr',
+      loader: 'sass-loader',
+    });
+  },
+  styles: ['https://cdn.bootcdn.net/ajax/libs/bulma/0.9.4/css/bulma.min.css'],
 };
 
 export default config;
+
+// (opts: { lang: string; type: "ssr" | "csr"; test: RegExp; loader?: string | undefined; options?: object | undefined; }): void

@@ -1,0 +1,4 @@
+export { createPropsTable } from './create-props-table';
+export { DemoBlock } from './demo-block';
+export { DemoDescription } from './demo-description';
+export { DemoIcon } from './dmeo-Icon';
