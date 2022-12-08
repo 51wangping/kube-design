@@ -16,7 +16,7 @@ const BundleAnalyzerPlugin =
 const StatoscopeWebpackPlugin = require('@statoscope/webpack-plugin').default;
 
 /**
- *  清楚 lib 文件夹
+ *  清除 lib 文件夹
  */
 function clean() {
   return del('./lib/**');
@@ -47,7 +47,9 @@ function buildStyle() {
 
 function copyStyles() {
   return gulp
-    .src(['src/**/**/*.scss'])
+    .src(['src/**/**/*.scss'], {
+      ignore: ['**/demos/**/*', '**/tests/**/*'],
+    })
     .pipe(gulp.dest('./lib/es'))
     .pipe(gulp.dest('./lib/cjs'));
 }
@@ -184,6 +186,10 @@ function umdWebpack() {
               {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
+              },
+              {
+                test: /\.scss$/i,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
               },
             ],
           },

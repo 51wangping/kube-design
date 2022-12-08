@@ -38,7 +38,7 @@ const config: IConfig = {
       loader: 'sass-loader',
     });
   },
-  styles: ['https://cdn.bootcdn.net/ajax/libs/bulma/0.9.4/css/bulma.min.css'],
+  // styles: ['https://cdn.bootcdn.net/ajax/libs/bulma/0.9.4/css/bulma.min.css'],
 };
 
 export default config;
