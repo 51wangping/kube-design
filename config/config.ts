@@ -1,7 +1,7 @@
 import { IConfig } from 'dumi';
 import { menus } from './menus';
 import { navs } from './navs';
-const repo = '@kube-design/components';
+const repo = 'kube-design';
 
 const logo = 'https://kubesphere.cloud/images/index/logo-QC.svg';
 const config: IConfig = {
