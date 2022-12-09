@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 12.18.0
       - name: Install Deps
         run:  npm install
       - name: Build App
