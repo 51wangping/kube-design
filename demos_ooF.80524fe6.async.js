@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[10],{xSVG:function(e,t,n){"use strict";n.r(t);var a=n("/7QA"),i=n("q1tI"),o=n.n(i);t["default"]=()=>o.a.createElement(a["a"],{title:"Hello dumi!"})}}]);
