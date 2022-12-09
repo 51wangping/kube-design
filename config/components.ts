@@ -1,5 +1,5 @@
 export const components = {
-  common: ['/components/Icon'],
+  common: ['/components/Icon', '/components/Color'],
   // layout: [
   //   '/components/auto-center',
   //   '/components/divider',
@@ -68,5 +68,5 @@ export const components = {
   //   '/components/toast',
   // ],
   // guidance: ['/components/badge', '/components/notice-bar'],
-  // other: ['/components/config-provider'],
+  other: ['/components/LocaleProvider'],
 };

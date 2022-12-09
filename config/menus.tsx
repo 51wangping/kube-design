@@ -63,9 +63,9 @@ export const menus = {
     //     title: '引导提示',
     //     children: components.guidance,
     //   },
-    //   {
-    //     title: '其他',
-    //     children: components.other,
-    //   },
+    {
+      title: '其他',
+      children: components.other,
+    },
   ],
 };
