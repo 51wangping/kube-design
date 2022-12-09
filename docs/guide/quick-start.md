@@ -3,47 +3,133 @@
 ## 安装
 
 ```bash
-$ npm install --save vigor-design-mobile
+$ npm install --save @kube-design/components
 # or
-$ yarn add vigor-design-mobile
-# or
-$ pnpm add vigor-design-mobile
+$ yarn add @kube-design/components
 ```
 
 ## 引入
 
-直接引入组件即可，vigor-design-mobile 会自动为你加载 css 样式文件：
+```jsx
+import React, { Component } from 'react';
 
-```js
-import { Button } from 'vigor-design-mobile';
-```
+import { Button } from '@kube-design/components';
 
-## 兼容性
-
-我们建议在项目中增加下面的 babel 配置，这样可以达到最大兼容性，为 iOS Safari `>= 10` 和 Chrome `>= 49`：
-
-```json
-{
-  "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "targets": {
-          "chrome": "49",
-          "ios": "10"
-        }
-      }
-    ]
-  ]
+class Example extends Component {
+  render() {
+    return <Button>Button</Button>;
+  }
 }
 ```
 
-<Alert type="warning">
-  不要把 node_modules 排除在 babel 编译之外，不然上面的配置不会有效果
-</Alert>
+### 使用 css
 
-对于 TypeScript，我们兼容的版本是 `>= 3.8`。
+直接导入 css 文件即可，不需要在 webpack 配置文件中额外配置。
 
-对于 React，我们兼容的版本是 `^16.8.0` `^17.0.0` `^18.0.0`。
+```jsx
+import '@kube-design/components/es/styles/index.css';
+```
 
-由于 iOS 9 并不支持 CSS 变量，因此如果你需要支持 iOS 9，请参考 [这篇文档](/guide/css-variables#css-变量自动降级) 启用 CSS 变量自动降级，并且将 babel 配置中的 target ios 设置为 `9`。
+### 使用 scss
+
+如果导入 scss 文件，可能需要在 webpack 配置文件中编译这部分 scss 文件。
+
+```jsx
+import '@kube-design/components/es/styles/index.scss';
+```
+
+webpack.config.js
+
+```js
+// module.rules
+[
+  ...otherRules,
+  {
+    test: /\.s[ac]ss$/i,
+    include: root('node_modules'),
+    use: ['style-loader', 'css-loader', 'sass-loader'],
+  },
+];
+```
+
+## 使用 Modular Import
+
+你必须使用 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) 按需加载组件库
+
+> 按需加载时，样式也会按需导入。 您不需要导入所有样式，只需导入 `main.scss`。
+
+配置 babel 如下：
+
+```js
+// babel.config.js
+
+const getBabelPluginImportConfig = require('@kube-design/components/babel.plugin.import')
+
+...
+
+"plugins": [
+  ['import', getBabelPluginImportConfig()],
+]
+```
+
+导入 `main.scss` 而不是 `index.scss`
+
+```jsx
+import '@kube-design/components/esm/styles/main.scss';
+```
+
+## Localization
+
+Kube Design 使用 `LocaleProvider` 组件来支持本地国际化。
+
+1. 定义语言环境
+
+```js
+// locales.js
+
+const locales = {
+  'en-US': {
+    HELLO: 'Hello!',
+  },
+  'zh-CN': {
+    HELLO: '你好!',
+  },
+};
+
+export default locales;
+```
+
+2. 使用 LocaleProvider 组件包裹根节点
+
+`locale` 方法可以分配给 `window` 以方便使用。
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { LocaleProvider } from '@kube-design/components';
+import locales from './locales';
+import App from './App';
+
+window.locale = LocaleProvider.locale;
+
+const App = () => (
+  <LocaleProvider locales={locales} currentLocale="en">
+    <App />
+  </LocaleProvider>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+1. 在根节点 App.jsx 及其子节点中，使用 locale.get('key') 获取语言文本
+
+```jsx
+import React from 'react';
+import { Button } from '@kube-design/components';
+
+export default () => <Button>{locale.get('HELLO')}</Button>;
+```
+
+## License
+
+MIT © [kubesphere](https://github.com/kubesphere)

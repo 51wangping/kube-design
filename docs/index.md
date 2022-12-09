@@ -1,8 +1,8 @@
 ---
-title: dumi - Documentation tool for component development scenarios
+title: kube-design - Documentation tool for component development scenarios
 order: 10
 hero:
-  title: dumi
+  title: kube-design
   desc: 📖 Documentation tool for component development scenarios
   actions:
     - text: Get started quickly

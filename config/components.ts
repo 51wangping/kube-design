@@ -68,5 +68,5 @@ export const components = {
   //   '/components/toast',
   // ],
   // guidance: ['/components/badge', '/components/notice-bar'],
-  other: ['/components/LocaleProvider'],
+  // other: ['/components/LocaleProvider'],
 };

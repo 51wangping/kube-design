@@ -1,21 +1,23 @@
 # Kube Design
 
-Kube Design is a set of React component libraries created for KubeSphere console.
+Kube Design 是一组为 KubeSphere 控制台创建的 React 组件库。
 
 [![NPM](https://img.shields.io/npm/v/@kube-design/components.svg)](https://www.npmjs.com/package/@kube-design/components)
 
-## Requirement
+## 要求
 
 - Node.js 12.18+ ([installation with nvm](https://github.com/creationix/nvm#usage))
 - Yarn 1.22.4+
 
-## Installation
+## 安装
 
-```shell
-yarn add @kube-design/components
+```bash
+$ npm install --save @kube-design/components
+# or
+$ yarn add @kube-design/components
 ```
 
-## Example
+## 引入
 
 ```jsx
 import React, { Component } from 'react';
@@ -29,24 +31,20 @@ class Example extends Component {
 }
 ```
 
-## Import All Styles
+### 使用 css
 
-There are two ways to import style files.
-
-### Use css
-
-The css file can be imported directly, so no additional configuration is required in the webpack configuration file.
+直接导入 css 文件即可，不需要在 webpack 配置文件中额外配置。
 
 ```jsx
-import '@kube-design/components/esm/styles/index.css';
+import '@kube-design/components/es/styles/index.css';
 ```
 
-### Use scss
+### 使用 scss
 
-If you import the scss file, you may need to compile this part of the scss file in the webpack configuration file.
+如果导入 scss 文件，可能需要在 webpack 配置文件中编译这部分 scss 文件。
 
 ```jsx
-import '@kube-design/components/esm/styles/index.scss';
+import '@kube-design/components/es/styles/index.scss';
 ```
 
 webpack.config.js
@@ -63,13 +61,13 @@ webpack.config.js
 ];
 ```
 
-## Modular Import
+## 使用 Modular Import
 
-You can use [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) to load the component library on demand.
+你必须使用 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) 按需加载组件库
 
-> When loading on demand, styles will also be imported on demand. You don't need to import all styles, only `main.scss`.
+> 按需加载时，样式也会按需导入。 您不需要导入所有样式，只需导入 `main.scss`。
 
-Configure the babel as follows:
+配置 babel 如下：
 
 ```js
 // babel.config.js
@@ -83,7 +81,7 @@ const getBabelPluginImportConfig = require('@kube-design/components/babel.plugin
 ]
 ```
 
-Import the `main.scss` instead of `index.scss`
+导入 `main.scss` 而不是 `index.scss`
 
 ```jsx
 import '@kube-design/components/esm/styles/main.scss';
@@ -91,9 +89,9 @@ import '@kube-design/components/esm/styles/main.scss';
 
 ## Localization
 
-Kube Design use `LocaleProvider` component to support localization.
+Kube Design 使用 `LocaleProvider` 组件来支持本地国际化。
 
-1. Define locales
+1. 定义语言环境
 
 ```js
 // locales.js
@@ -110,9 +108,9 @@ const locales = {
 export default locales;
 ```
 
-2. Use the LocaleProvider component to wrap the root node
+2. 使用 LocaleProvider 组件包裹根节点
 
-The `locale` method can be assigned to `window` for easy use.
+`locale` 方法可以分配给 `window` 以方便使用。
 
 ```jsx
 import React from 'react';
@@ -132,7 +130,7 @@ const App = () => (
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
-3. In the root node App.jsx and its child nodes, use `locale.get('key')` to get the language text
+1. 在根节点 App.jsx 及其子节点中，使用 locale.get('key') 获取语言文本
 
 ```jsx
 import React from 'react';
