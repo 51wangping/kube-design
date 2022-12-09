@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: 12.18.0
       - name: Install Deps
-        run:  yarn
-      - name: Build App
+        run:  npm install
+      - name: Build docs
         run: npm run docs:build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
