@@ -1,10 +1,10 @@
-import { Icon } from '@kube-design/components';
+import { Icon, Space } from '@kube-design/components';
 import { IconDemoBlock } from 'demos';
 import React from 'react';
 
 export default function Size() {
   return (
-    <div style={{ display: 'flex' }}>
+    <Space direction="horizontal">
       <IconDemoBlock name="docker">
         <Icon name="docker" size="large" type="dark" />
       </IconDemoBlock>
@@ -17,6 +17,6 @@ export default function Size() {
       <IconDemoBlock name="docker">
         <Icon name="docker" size={56} />
       </IconDemoBlock>
-    </div>
+    </Space>
   );
 }
