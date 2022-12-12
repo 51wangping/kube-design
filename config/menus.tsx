@@ -55,10 +55,10 @@ export const menus = {
     //     title: '信息录入',
     //     children: components.dataEntry,
     //   },
-    //   {
-    //     title: '反馈',
-    //     children: components.feedback,
-    //   },
+    {
+      title: '反馈',
+      children: components.feedback,
+    },
     //   {
     //     title: '引导提示',
     //     children: components.guidance,

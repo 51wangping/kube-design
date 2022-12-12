@@ -141,6 +141,10 @@ function umdWebpack() {
           },
           resolve: {
             extensions: ['.js', '.json'],
+            alias: {
+              '@kube-design/components': './lib/es',
+              '@kube-design/components/*': './lib/es/*',
+            },
           },
           plugins: [
             new BundleAnalyzerPlugin({

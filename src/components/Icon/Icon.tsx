@@ -9,7 +9,7 @@ const SizeTypes = tuple('small', 'medium', 'large');
 export type SizeType = typeof SizeTypes[number];
 
 const TypeColor = tuple('dark', 'light', 'coloured');
-export type Types = typeof TypeColor[number];
+export type IconTypes = typeof TypeColor[number];
 
 export interface Color {
   primary: string;
@@ -19,7 +19,7 @@ export interface Color {
 export interface IconProps {
   name: string;
   prefix?: string;
-  type?: Types;
+  type?: IconTypes;
   size?: SizeType | number;
   className?: string;
   onClick?: (e?: React.MouseEvent<HTMLSpanElement>) => void;
