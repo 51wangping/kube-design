@@ -3,7 +3,6 @@ import { isNumber, omit } from 'lodash';
 import React, { Component } from 'react';
 import { SizeType } from '../../utils/interface';
 import Icon from './LoadingIcon';
-import './styles.scss';
 
 export interface LoadingProps {
   className?: string;

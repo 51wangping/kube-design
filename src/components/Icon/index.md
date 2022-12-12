@@ -21,3 +21,23 @@
 您可以通过输入名称搜索您想要的图标
 
 <code src="./demo/list.tsx" inline />
+
+## API
+
+通过设置 Icon 的属性来产生不同的样式.
+
+Icon 的属性说明如下：
+
+| 属性       | 说明                                                             | 类型                                          | 默认值  |
+| ---------- | ---------------------------------------------------------------- | --------------------------------------------- | ------- |
+| name       | 设置图标                                                         | string                                        | -       |
+| prefix     | 设置图标前缀                                                     | string                                        | `icon-` |
+| size       | 设置图标大小，可选值为 `small` `medium` `large` 或者设置具体数据 | string                                        | `small` |
+| type       | 设置图标类型，可选值为 `dark` `light` `coloured`                 | string                                        | `dark`  |
+| className  | 设置图标类名                                                     | string                                        | -       |
+| style      | 设置图标样式                                                     | React.CSSProperties                           | -       |
+| clickable  | 设置图标是否可点击                                               | boolean                                       | `false` |
+| disabled   | 设置图标是否可禁用                                               | boolean                                       | `false` |
+| changeable | 设置图标是否可改变                                               | boolean                                       | `false` |
+| color      | 设置图标是否可改变                                               | Color { primary: string; secondary: string; } | -       |
+| onClick    | 点击按钮时的回调                                                 | (event) => void                               | -       |

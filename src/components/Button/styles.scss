@@ -7,6 +7,7 @@
   border: none;
   border-radius: 100px;
   box-sizing: border-box;
+  font-size: 12px;
   cursor: pointer;
   transition: all $trans-speed ease-in-out;
   @include TypographySymbolText;
@@ -23,13 +24,26 @@
   }
 
   &:disabled {
+    cursor: not-allowed;
     opacity: 0.6;
     pointer-events: none;
-    cursor: not-allowed;
   }
 
   & + .button {
     margin-left: 12px;
+  }
+  &-size {
+    &-small {
+      padding: 0px 7px;
+    }
+    &-medium {
+      padding: 4px 15px;
+      height: 32px;
+    }
+    &-large {
+      padding: 6px 15px;
+      height: 40px;
+    }
   }
 }
 
@@ -133,6 +147,10 @@
   &:active {
     background-color: $btn-flat-active-bg;
   }
+}
+
+.is-disable {
+  cursor: not-allowed;
 }
 
 .is-ghost {

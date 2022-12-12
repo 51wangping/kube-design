@@ -10,6 +10,7 @@ export default function Basic() {
       <Button type="danger">Kube Design</Button>
       <Button type="flat">Kube Design</Button>
       <Button disabled>Kube Design</Button>
+      <Button ghost>Kube Design</Button>
     </div>
   );
 }

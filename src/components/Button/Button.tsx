@@ -3,20 +3,23 @@ import classNames from 'classnames';
 import React, { PureComponent } from 'react';
 import Icon from '../Icon';
 import { IconTypes } from '../Icon/Icon';
-import './styles.scss';
 
 import {
   ButtonHTMLType,
   SizeType,
 } from '@kube-design/components/utils/interface';
+import { tuple } from '../../utils/type';
 import Loading from '../Loading';
 
+const ButtonTypes = tuple('default', 'control', 'primary', 'danger', 'flat');
+export type ButtonType = typeof ButtonTypes[number];
+
 export interface ButtonProps {
-  type?: string;
+  type?: ButtonType;
   htmlType?: ButtonHTMLType;
   className?: string;
   style?: React.CSSProperties;
-  size?: SizeType | number;
+  size?: SizeType;
   icon?: string;
   iconSize?: SizeType | number;
   iconType?: IconTypes;
@@ -30,7 +33,7 @@ export default class Button extends PureComponent<ButtonProps> {
   static defaultProps = {
     type: 'default',
     htmlType: 'button',
-    size: 'normal',
+    size: 'small',
     icon: '',
     iconType: 'dark',
   };

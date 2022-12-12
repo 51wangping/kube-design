@@ -2,7 +2,6 @@ import { SizeType } from '@kube-design/components/utils/interface';
 import classNames from 'classnames';
 import { isNumber, noop } from 'lodash';
 import React, { PureComponent } from 'react';
-import './styles.scss';
 
 export interface LoadingIconProps {
   prefix?: string;

@@ -1,9 +1,8 @@
 import classNames from 'classnames';
 import React, { PureComponent } from 'react';
 import domReady from '../../utils/domReady';
-import svgSprite from './spirits';
-
 import { tuple } from '../../utils/type';
+import svgSprite from './spirits';
 
 const SizeTypes = tuple('small', 'medium', 'large');
 export type SizeType = typeof SizeTypes[number];
