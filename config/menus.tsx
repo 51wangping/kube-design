@@ -47,10 +47,10 @@ export const menus = {
     //     children: components.navigation,
     //   },
 
-    //   {
-    //     title: '信息展示',
-    //     children: components.dataDisplay,
-    //   },
+    {
+      title: '信息展示',
+      children: components.dataDisplay,
+    },
     //   {
     //     title: '信息录入',
     //     children: components.dataEntry,
