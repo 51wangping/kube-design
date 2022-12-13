@@ -10,7 +10,7 @@ export const components = {
   //   '/components/tab-bar',
   //   '/components/tabs',
   // ],
-  dataDisplay: ['/components/Badge'],
+  dataDisplay: ['/components/Badge', '/components/Collapse'],
   dataEntry: ['/components/Checkbox'],
   feedback: ['/components/Loading', '/components/Alert'],
   // guidance: ['/components/badge', '/components/notice-bar'],
