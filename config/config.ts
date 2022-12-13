@@ -3,7 +3,7 @@ import { menus } from './menus';
 import { navs } from './navs';
 const repo = 'kube-design';
 
-const logo = 'https://kubesphere.cloud/images/index/logo-QC.svg';
+const logo = 'https://kubesphere.com.cn/KubeSphere.ico';
 const config: IConfig = {
   mode: 'site',
   title: 'kube-design',
