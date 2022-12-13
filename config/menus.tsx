@@ -51,10 +51,10 @@ export const menus = {
       title: '信息展示',
       children: components.dataDisplay,
     },
-    //   {
-    //     title: '信息录入',
-    //     children: components.dataEntry,
-    //   },
+    {
+      title: '信息录入',
+      children: components.dataEntry,
+    },
     {
       title: '反馈',
       children: components.feedback,
