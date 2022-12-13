@@ -12,7 +12,6 @@ export interface SpaceProps {
   size?: SpaceSize;
   direction?: 'horizontal' | 'vertical';
   align?: 'start' | 'end' | 'center' | 'baseline';
-  split?: React.ReactNode;
   wrap?: boolean;
   children?: React.ReactNode;
 }

@@ -129,7 +129,3 @@ import { Button } from '@kube-design/components';
 
 export default () => <Button>{locale.get('HELLO')}</Button>;
 ```
-
-## License
-
-MIT © [kubesphere](https://github.com/kubesphere)

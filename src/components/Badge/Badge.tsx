@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { isEmpty } from 'lodash';
 import React, { Component } from 'react';
 
 import { tuple } from '../../utils/type';
@@ -24,7 +25,7 @@ class Badge extends Component<BadgeProps> {
   };
 
   renderBadge = () => {
-    const { status, text, overflowCount, count } = this.props;
+    const { status, text, overflowCount, count, children } = this.props;
 
     let number: string | number = '';
 
@@ -36,7 +37,13 @@ class Badge extends Component<BadgeProps> {
       number = count;
     }
     return (
-      <span className={classNames(`is-${status}`, 'badge')}>{number}</span>
+      <span
+        className={classNames(`is-${status}`, 'badge', {
+          absolute: !isEmpty(children),
+        })}
+      >
+        {number}
+      </span>
     );
   };
 

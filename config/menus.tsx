@@ -38,10 +38,10 @@ export const menus = {
       title: '通用',
       children: components.common,
     },
-    //   {
-    //     title: '布局',
-    //     children: components.layout,
-    //   },
+    {
+      title: '布局',
+      children: components.layout,
+    },
     //   {
     //     title: '导航',
     //     children: components.navigation,
