@@ -26,7 +26,12 @@ function buildStyle() {
   return gulp
     .src(['./src/**/*.scss'], {
       base: './src/',
-      ignore: ['**/demos/**/*', '**/tests/**/*', '*.patch.less'],
+      ignore: [
+        '**/demos/**/*',
+        '**/demo/**/*',
+        '**/tests/**/*',
+        '*.patch.less',
+      ],
     })
     .pipe(
       sass({
@@ -48,7 +53,7 @@ function buildStyle() {
 function copyStyles() {
   return gulp
     .src(['src/**/**/*.scss'], {
-      ignore: ['**/demos/**/*', '**/tests/**/*'],
+      ignore: ['**/demos/**/*', '**/demo/**/*', '**/tests/**/*'],
     })
     .pipe(gulp.dest('./lib/es'))
     .pipe(gulp.dest('./lib/cjs'));
@@ -61,7 +66,7 @@ function buildES() {
   });
   return gulp
     .src(['src/**/*.{ts,tsx}'], {
-      ignore: ['**/demos/**/*', '**/tests/**/*'],
+      ignore: ['**/demos/**/*', '**/demo/**/*', '**/tests/**/*'],
     })
     .pipe(tsProject)
     .pipe(gulp.dest('lib/es/'));
@@ -69,7 +74,9 @@ function buildES() {
 
 function buildCJS() {
   return gulp
-    .src(['lib/es/**/*.js'])
+    .src(['lib/es/**/*.js'], {
+      ignore: ['**/demos/**/*', '**/demo/**/*', '**/tests/**/*'],
+    })
     .pipe(
       babel({
         plugins: ['@babel/plugin-transform-modules-commonjs'],
@@ -87,7 +94,7 @@ function buildDeclaration() {
   });
   return gulp
     .src(['src/**/*.{ts,tsx}'], {
-      ignore: ['**/demos/**/*', '**/tests/**/*'],
+      ignore: ['**/demos/**/*', '**/demo/**/*', '**/tests/**/*'],
     })
     .pipe(tsProject)
     .pipe(gulp.dest('lib/es/'))
