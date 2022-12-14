@@ -11,7 +11,7 @@ export const components = {
   //   '/components/tabs',
   // ],
   dataDisplay: ['/components/Badge', '/components/Collapse'],
-  dataEntry: ['/components/Checkbox'],
+  dataEntry: ['/components/Checkbox', '/components/DatePicker'],
   feedback: ['/components/Loading', '/components/Alert'],
   // guidance: ['/components/badge', '/components/notice-bar'],
   // other: ['/components/LocaleProvider'],
