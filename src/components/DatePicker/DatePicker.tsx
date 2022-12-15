@@ -24,19 +24,25 @@ export interface DatePickerProps {
   showClearBtn?: boolean;
   disabled?: boolean;
   enableTime?: boolean;
+  enableSeconds?: boolean;
+  dateFormat?: string;
   mode?: string;
+  weekNumbers?: boolean;
+  noCalendar?: boolean;
+  maxDate?: string;
+  minDate?: string;
   defaultValue?: string | number | any[];
   value?: DateValue;
   options?: Option;
-  onChange?: (value: DateValue, daetaStr: string, instance: any) => void;
-  onOpen?: (value: DateValue, daetaStr: string, instance: any) => void;
-  onClose?: (value: DateValue, daetaStr: string, instance: any) => void;
-  onClear?: () => void;
-  onMonthChange?: () => void;
-  onYearChange?: () => void;
-  onReady?: () => void;
-  onValueUpdate?: () => void;
-  onDayCreate?: () => void;
+  onChange?: (data: DateValue, dataString: string, instance: any) => void;
+  onOpen?: (data: DateValue, dataString: string, instance: any) => void;
+  onClose?: (data: DateValue, dataString: string, instance: any) => void;
+  onClear?: (data?: DateValue, dataString?: string, instance?: any) => void;
+  onMonthChange?: (data: DateValue, dataString: string, instance: any) => void;
+  onYearChange?: (data: DateValue, dataString: string, instance: any) => void;
+  onReady?: (data: DateValue, dataString: string, instance: any) => void;
+  onValueUpdate?: (data: DateValue, dataString: string, instance: any) => void;
+  onDayCreate?: (data: DateValue, dataString: string, instance: any) => void;
   [propName: string]: any;
 }
 
@@ -72,7 +78,6 @@ const propsKey: string[] = [
   'mode',
   'conjunction',
   'noCalendar',
-  'enableSeconds',
   'weekNumbers',
   'appendTo',
   'locale',

@@ -21,7 +21,7 @@ export interface IconProps {
   type?: IconTypes;
   size?: SizeType | number;
   className?: string;
-  onClick?: (e?: React.MouseEvent<HTMLSpanElement>) => void;
+  onClick?: (e: React.MouseEvent<HTMLSpanElement>) => void;
   style?: React.CSSProperties;
   clickable?: boolean;
   changeable?: boolean;
