@@ -10,7 +10,12 @@ export const components = {
   //   '/components/tab-bar',
   //   '/components/tabs',
   // ],
-  dataDisplay: ['/components/Badge', '/components/Collapse'],
+  dataDisplay: [
+    '/components/Badge',
+    '/components/Collapse',
+    '/components/Dropdown',
+    '/components/Menu',
+  ],
   dataEntry: [
     '/components/Checkbox',
     '/components/DatePicker',
