@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import type { BasicProps } from '../components/Layout/Basic';
+
 type GeneratorHocClass = (
-  BasicComponent: React.ComponentType<any>,
-) => React.ComponentType;
+  BasicComponent: React.ElementType,
+) => React.FunctionComponent<BasicProps> | any;
 
 type GeneratorProps = (props: {
   [propsName: string]: any;

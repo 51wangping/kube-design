@@ -1,6 +1,6 @@
 export const components = {
   common: ['/components/Icon', '/components/Color', '/components/Button'],
-  layout: ['/components/Space'],
+  layout: ['/components/Layout', '/components/Space'],
   // navigation: [
   //   '/components/capsule-tabs',
   //   '/components/index-bar',
