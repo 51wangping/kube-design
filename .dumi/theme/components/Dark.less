@@ -36,33 +36,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid @c-btn-border;
+    background-color: @c-light-bg;
 
     svg {
       transition: all 0.3s linear;
+      fill: @c-text;
+      [data-prefers-color='dark'] & {
+        fill: @c-text-dark;
+      }
       &:hover {
         transform: scale(1.2);
       }
     }
+    [data-prefers-color='dark'] & {
+      border-color: @c-btn-border-dark;
+      background-color: @c-bg-dark;
+    }
   }
-
-  // &-sun,
-  // &-moon,
-  // &-auto {
-  //   border: 1px solid @c-btn-border;
-  //   background-color: @c-light-bg;
-
-  //   svg {
-  //     fill: @c-text;
-  //     [data-prefers-color=dark] & {
-  //       fill: @c-text-dark;
-  //     }
-  //   }
-
-  //   [data-prefers-color=dark] & {
-  //     border-color: @c-btn-border-dark;
-  //     background-color: @c-bg-dark;
-  //   }
-  // }
 
   &-switch {
     [data-mode='doc'] & {
