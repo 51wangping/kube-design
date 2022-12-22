@@ -35,6 +35,10 @@ body {
     background-color: @c-light-bg;
   }
 
+  [data-prefers-color='dark'] & {
+    background-color: @c-light-bg-dark
+  }
+
   &[data-gapless='true'] {
     padding-top: @s-nav-height !important;
     padding-right: 0 !important;
@@ -81,9 +85,6 @@ body {
     text-align: center;
     transform: translateY(50%);
 
-    [data-prefers-color='dark'] & {
-      background-color: @c-light-bg-dark;
-    }
 
     @media @mobile {
       margin: -16px -16px 0;
